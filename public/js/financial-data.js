@@ -25,14 +25,11 @@ const printChart = data => {
     })
     console.log('stock prices: ', stockPrices)
 
-}
-
-
-//drawing the chart
+    //drawing the chart
 //canvas Object
 let ctx = document.querySelector('#myChart').getContext('2d')
 
-
+/
 new Chart(ctx, {
     type: 'line', 
     data: {
@@ -49,4 +46,9 @@ new Chart(ctx, {
         ]
     }
 })
+
+}
+
+
+
 
